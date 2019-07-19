@@ -4,8 +4,10 @@ import axios from "axios";
 export default function StarWarsGrid() {
   useEffect(() => {
     axios.get(`https://swapi.co/api/people/`).then(res => {
-      const people = res.data;
+      const people = res.data.results;
       console.log(people);
     });
   }, []);
+
+  return <div />;
 }
