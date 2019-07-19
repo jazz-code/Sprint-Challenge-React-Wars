@@ -6,14 +6,14 @@ export default function StarWarsCard({ name, height, mass, hairColor }) {
     <Card className="card-container">
       <Card.Content>
         <Card.Header>
-          <h1>{name}</h1>
+          <h1 className="name">{name}</h1>
         </Card.Header>
         {/* <Card.Meta>Joined in 2016</Card.Meta> */}
         <Card.Description>
-          <p>Description:</p>
+          {/* <p>Description:</p> */}
           <div className="description-container">
-            Height: {height}
-            Mass: {mass}
+            Height: {height} <br />
+            Mass: {mass} <br />
             Hair Color: {hairColor}
           </div>
         </Card.Description>

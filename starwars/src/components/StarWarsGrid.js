@@ -3,6 +3,8 @@ import { Button } from "semantic-ui-react";
 import axios from "axios";
 import StarWarsCard from "./StarWarsCard";
 
+import "./StarWars.css";
+
 export default function StarWarsGrid() {
   const [people, setPeople] = useState([]);
   const [num, setNum] = useState(1);
