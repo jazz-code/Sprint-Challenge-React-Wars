@@ -1,0 +1,35 @@
+.starwars-container {
+  display: flex;
+  width: 86%;
+  margin: 5% auto;
+  border: 2px solid black;
+}
+
+.name {
+  color: #443e3e;
+  text-shadow: 1px 1px 5px #fff;
+  font-size: 19px;
+}
+
+.card-container {
+  padding: 0 5px;
+}
+
+.description-container {
+  padding: 40px 0;
+}
+
+button {
+  background-color: #f9a0a0;
+  color: black;
+  margin: 0 40px;
+  padding: 8px;
+  border-radius: 9px;
+  color: #443e3e;
+  text-shadow: 1px 1px 5px #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f9a0a0d8;
+}
