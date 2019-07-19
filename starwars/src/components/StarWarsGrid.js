@@ -16,8 +16,15 @@ export default function StarWarsGrid() {
   return (
     <div>
       Test
-      {people.map(peopleArray => {
-        return <StarWarsCard key={peopleArray} starWars={peopleArray.name} />;
+      {people.map(starWars => {
+        return (
+          <StarWarsCard
+            key={starWars}
+            name={starWars.name}
+            height={starWars.height}
+            mass={starWars.mass}
+          />
+        );
       })}
     </div>
   );
