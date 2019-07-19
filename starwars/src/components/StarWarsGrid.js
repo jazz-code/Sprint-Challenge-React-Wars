@@ -6,7 +6,7 @@ export default function StarWarsGrid() {
   const [people, setPeople] = useState([]);
 
   useEffect(() => {
-    axios.get(`https://swapi.co/api/people/`).then(res => {
+    axios.get(`https://henry-mock-swapi.herokuapp.com/api`).then(res => {
       const people = res.data.results;
       console.log(people);
       setPeople(people);

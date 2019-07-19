@@ -1,17 +1,21 @@
 import React from "react";
-import { Card, Icon, Image } from "semantic-ui-react";
+import { Card, Image } from "semantic-ui-react";
 
 export default function StarWarsCard({ name, height, mass, hairColor }) {
   return (
-    <Card>
+    <Card className="card-container">
       <Card.Content>
-        <Card.Header>{name}</Card.Header>
+        <Card.Header>
+          <h1>{name}</h1>
+        </Card.Header>
         {/* <Card.Meta>Joined in 2016</Card.Meta> */}
         <Card.Description>
-          <p>Information:</p>
-          Height: {height}
-          Mass: {mass}
-          Hair Color: {hairColor}
+          <p>Description:</p>
+          <div className="description-container">
+            Height: {height}
+            Mass: {mass}
+            Hair Color: {hairColor}
+          </div>
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
