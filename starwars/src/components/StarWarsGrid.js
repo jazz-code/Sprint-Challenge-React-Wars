@@ -15,7 +15,6 @@ export default function StarWarsGrid() {
 
   return (
     <div>
-      Test
       {people.map(starWars => {
         return (
           <StarWarsCard
@@ -23,6 +22,7 @@ export default function StarWarsGrid() {
             name={starWars.name}
             height={starWars.height}
             mass={starWars.mass}
+            hairColor={starWars.hair_color}
           />
         );
       })}
